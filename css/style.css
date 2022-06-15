@@ -4,12 +4,21 @@
     padding: 0;
 }
 
-.grid-container {
+.wrapper {
+	padding: 20px;
+	max-width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 
+.grid-container {
+	display: grid;
+	grid-template: 50px 150px 50px / 25% 45% 25%;
+	gap: 10px 20px;
 }
 
 .grid-elem {
-    height: 50px;
+    min-height: 50px;
     background-color: rgba(1, 1, 96, 1);
     color: #fff;
     line-height: 50px;
