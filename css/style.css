@@ -9,12 +9,16 @@
 	max-width: 1180px;
 	margin: 0 auto;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .grid-container {
+	width: 100%;
+	height: 700px;
 	display: grid;
-	grid-template: 50px 150px 50px / 25% 45% 25%;
-	gap: 10px 20px;
+	grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+	gap: 10px;
 }
 
 .grid-elem {
@@ -26,4 +30,7 @@
     font-size: 26px;
     border: 1px solid #000;
     border-radius: 4px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
 }
