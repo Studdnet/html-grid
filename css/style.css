@@ -56,6 +56,16 @@
 	grid-auto-rows: minmax(100px, auto);
 	grid-auto-columns: 1fr;
 	gap: 60px;
+	/* align-items: center;
+	justify-items: center; */
+	/* place-items:  center center; */
+
+	/* place-items: justify-item + align-items; */
+	/* place-content: justify-content + align-content; */
+	
+	/* justify-content: center;
+	align-content: center; */
+	place-content: center center;
 }
 
 .item__img {
@@ -133,9 +143,11 @@
 #sixth {
 	grid-column: 2/4;
 	grid-row: 2/3;
+
+	/* place-self: justify-self + align-self; */
 }
 
 #sixth .item__img img {
-	width: 540px;
+	width: 480px;
 	height: 100px;
 }
