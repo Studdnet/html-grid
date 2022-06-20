@@ -129,3 +129,13 @@
 #fourth .item__img img{
 	height: 260px;
 }
+
+#sixth {
+	grid-column: 2/4;
+	grid-row: 2/3;
+}
+
+#sixth .item__img img {
+	width: 540px;
+	height: 100px;
+}
