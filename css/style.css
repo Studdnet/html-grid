@@ -13,6 +13,7 @@
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
+	min-height: 100%;
 }
 
 .grid-container {
@@ -151,3 +152,61 @@
 	width: 480px;
 	height: 100px;
 }
+
+.areas-container {
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template: repeat(2, minmax(100px, auto)) / repeat(3, minmax(300px, 1fr));
+	grid-auto-rows: minmax(100px, auto);
+	grid-auto-columns: 1fr;
+	gap: 10px;
+	grid-template-areas: 
+	"header header header"
+	"blog blog massages"
+	"footer footer footer"
+	;
+}
+
+.areas-element {
+	padding: 10px;
+	background-color: rgb(96, 94, 1);
+	color: #fff;
+	text-align: center;
+	font-size: 25px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#header {
+	grid-area: header;
+}
+
+#blog {
+	grid-area: blog;
+}
+
+#massages {
+	grid-area: massages;
+}
+
+#footer {
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 20px;
+}
+
+.orange {
+	background-color: orange;
+	flex: 1 1 auto;
+	margin-right: 15px;
+}
+
+.orange:last-child {
+	margin-right: 0;
+}
+
