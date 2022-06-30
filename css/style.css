@@ -210,3 +210,33 @@
 	margin-right: 0;
 }
 
+/* Freelancer */
+
+.free {
+	background-color: rgb(73, 73, 73);
+}
+
+.wrapper_free {
+	height: 100vh;
+	color: #fff;
+}
+
+.content {
+	width: 100%;
+}
+
+.content h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.grid__body {
+	display: grid;
+}
+
+.grid__item {
+	text-align: center;
+	border: 2px dashed rgba(255, 255, 255, 0.2);
+	padding: 30px;
+	font-size: 25px;
+}
