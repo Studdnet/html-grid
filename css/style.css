@@ -222,11 +222,40 @@
 
 .content {
 	width: 100%;
+	position: relative;
 }
 
 .content h1 {
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+.content__box {
+	display: flex;
+	justify-content: center;
+}
+
+
+.content__link {
+	font-size: 25px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+}
+
+.content__link:hover {
+	text-decoration: color;
+	color: yellow;
+	background-size: 100% 2px;
+}
+
+.grid {
+	margin-top: 25px;
 }
 
 .grid__body {
