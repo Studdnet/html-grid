@@ -97,7 +97,7 @@ body {
 .container {
 	min-height: 100%;
 	display: grid;
-	/* Формируем ограничивающий контейнер для всей страницы */
+	/* Формируем ограничивающий контейнер для всей страницы, который будет прижимать footer к низу страницы */
 	grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
 	grid-template-areas:
 		"header"
@@ -202,7 +202,7 @@ body {
 	.main {
 		grid-area: main;
 		display: grid;
-		grid-template: 1fr / 1fr minmax(auto, 300px) minmax (auto, 1100px) 1fr;
+		grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
 	}
 
 	.sidebar {
@@ -216,8 +216,13 @@ body {
 	}
 }
 
+.title{
+	font-size: 23px;
+	color: #fff;
+}
+
 .content__gallery {
-	margin: 0px 0px 30px 0px;
+	margin: 15px 0px 30px 0px;
 }
 
 .gallery__items {
@@ -248,12 +253,17 @@ body {
 }
 
 .products__items {
+	margin-top: 15px;
 	display: grid;
 	column-gap: 30px;
 	row-gap: 50px;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	/* Если нужно сделать, чтобы все карточки товаров были одной высоты во всех рядах */
 	/* grid-auto-rows: 1fr; */
+}
+
+.products__title {
+	text-transform: uppercase;
 }
 
 .products__item {
